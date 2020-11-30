@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fifteen Puzzle</title>
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <style>
+
+
+        container {
+            margin-top: 10%;
+            width: 30%;
+            align-content: center;
+        }
+
+        .box {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box select {
+            font-family: "Permanent Marker";
+            background-color: #12707e;
+            color: white;
+            padding: 12px;
+            width: 250px;
+            border: none;
+            font-size: 20px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+            -webkit-appearance: button;
+            appearance: button;
+            outline: none;
+        }
+
+        .box::before {
+            content: "\f13a";
+            font-family: FontAwesome;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 20%;
+            height: 100%;
+            text-align: center;
+            font-size: 28px;
+            line-height: 45px;
+            color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+        }
+
+        .box:hover::before {
+            color: rgba(255, 255, 255, 0.6);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .box select option {
+            padding: 30px;
+        }
+        /*end select option styling*/
+    </style>
+</head>
+<body onload="initializeGame()">
+
+<!--<div id="wrapper"><h1>Fifteen Squares Puzzle</h1></div>-->
+
+
+<!--    <p>-->
+<!--        The goal of the fifteen puzzle is to reassemble its-->
+<!--        fifteen squares by shuffling the numbered squares-->
+<!--        into their original position by manipulating the-->
+<!--        squares.-->
+<!--    </p>-->
+
+<div id="containter">
+    <div class="box">
+        <select id="castles" name="castles" title="Backgrounds" onchange="changeBackground()">
+            <option value="castle" id="castle">Castle 1</option>
+            <option value="castle_2" id="castle_2">Castle 2</option>
+            <option value="castle_3" id="castle_3">Castle 3</option>
+            <option value="castle_4" id="castle_4">Castle 4</option>
+        </select>
+    </div>
+</div>
+<br><br><br><br>
+
+
+<div id="main">
+    <button id="one" class="tile">1</button>
+    <button id="two" class="tile">2</button>
+    <button id="three" class="tile">3</button>
+    <button id="four" class="tile">4</button>
+    <button id="five" class="tile">5</button>
+    <button id="six" class="tile">6</button>
+    <button id="seven" class="tile">7</button>
+    <button id="eight" class="tile">8</button>
+    <button id="nine" class="tile">9</button>
+    <button id="ten" class="tile">10</button>
+    <button id="eleven" class="tile">11</button>
+    <button id="twelve" class="tile">12</button>
+    <button id="thirteen" class="tile">13</button>
+    <button id="fourteen" class="tile">14</button>
+    <button id="fifteen" class="tile">15</button>
+    <button id="sixteen" class="tile"></button>
+</div>
+
+
+<center>
+    <nav>
+        <ul>
+            <li>
+                <a onclick="shuffleBoard()">shuffle</a>
+                <span></span><span></span><span></span><span></span></li>
+        </ul>
+    </nav>
+</center>
+
+
+<script type="text/javascript" src="fifteen.js"></script>
+</body>
+</html>
