@@ -5,7 +5,7 @@
 let moves = 0; //number of moves
 
 // The available div elements
-// sixteen is empty
+// sixteen is empty for the moves
 const squares = [
     "one", "two", "three", "four",
     "five", "six", "seven", "eight",
