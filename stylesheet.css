@@ -1,21 +1,19 @@
-/*html, body {*/
-/*    !*height: 100%;*!*/
-/*    text-decoration: none;*/
-/*    text-align: center;*/
-/*    !*display: block;*!*/
-/*    margin-left: auto;*/
-/*    margin-right: auto*/
-/*}*/
+html, body {
+    /*height: 100%;*/
+    text-decoration: none;
+    text-align: center;
+    /*display: block;*/
+    margin-left: auto;
+    margin-right: auto
+}
 
-/*#wrapper {*/
-/*    display: block;*/
-/*    margin-left: auto;*/
-/*    margin-right: auto;*/
-/*    width: 60%;*/
-/*    text-align: justify-all;*/
-
-
-/*}*/
+#wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: justify-all;
+}
 
 #main {
     box-shadow: 0 5px 35px 0px rgb(0, 0, 0);
@@ -26,6 +24,7 @@
 }
 
 h1 {
+    color: #ff9800;
     margin:auto;
     text-align: center;
     margin: auto;
@@ -33,6 +32,7 @@ h1 {
 
 
 a {
+    font-color: #ff9800;
     text-decoration: none;
     border:0;
 }
@@ -57,7 +57,7 @@ a {
 #thirteen { background-position: 0      -375px; }
 #fourteen { background-position: -125px -375px; }
 #fifteen  { background-position: -250px -375px; }
-#sixteen  { border: 2px solid transparent !important; }
+#sixteen  { border: 2px solid #3cb6d4 !important; }
 
 .clickable {
     -webkit-transition: all 0.5s ease-in-out;
@@ -116,14 +116,15 @@ body {
     color: #3cb6d4;
     background-color: #0A3940;
     text-align: center;
+
 }
 
 h1 {
     width: 90%;
     overflow: hidden;
     text-align: center;
-    font-size: 20pt;
-    color: #3cb6d4;
+    font-size: 26pt;
+    color: #ff9800;
     margin-top: 0pt;
     margin-left: .7em;
     text-decoration: none;
@@ -152,60 +153,6 @@ span {
     background-color: transparent;
 }
 
-
-
-
-/*.tile {*/
-/*    width: 121px;*/
-/*    height: 121px;*/
-/*    float: left;*/
-/*    text-align: center;*/
-/*    !*border: 2px #ffffff solid;*!*/
-/*    vertical-align: middle;*/
-/*    font-size: 32px;*/
-
-/*    line-height: 121px;*/
-/*    --c: #3cb6d4;*/
-/*    !*vertical-align: center;*!*/
-/*    color: var(--c);*/
-/*    border: 2px solid var(--c);*/
-/*    !*border-radius: 0.5em;*!*/
-/*    text-transform: uppercase;*/
-/*    font-weight: bold;*/
-/*    font-family: sans-serif;*/
-/*    position: relative;*/
-/*    overflow: hidden;*/
-/*    z-index: 1;*/
-/*    transition: 0.5s;*/
-/*}*/
-
-
-/*.tile::before {*/
-/*    left: 0;*/
-/*    top: 0;*/
-/*    width: 121px;*/
-/*    height: 121px;*/
-/*    float: left;*/
-/*    text-align: center;*/
-/*    !*border: 2px #ffffff solid;*!*/
-/*    font-size: 32px;*/
-/*    font-family: "Permanent Marker";*/
-/*    line-height: 121px;*/
-/*    --c: #3cb6d4;*/
-/*    color: var(--c);*/
-/*    font-size: 16px;*/
-/*    border: 2px solid var(--c);*/
-/*    text-transform: uppercase;*/
-/*    font-weight: bold;*/
-/*    font-family: sans-serif;*/
-/*    position: relative;*/
-/*    overflow: hidden;*/
-/*    z-index: 1;*/
-/*    transition: 0.5s;*/
-/*}*/
-
-
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -218,6 +165,7 @@ nav ul li {
     vertical-align: center;
     color: var(--c);
     font-size: 16px;
+    font-color: #ff9800;
     border: 2px solid var(--c);
     width: 121px;
     height: 60px;
@@ -271,239 +219,6 @@ nav ul li span:nth-child(4) {
     --n: 4;
 }
 
-.tile {
-    width: 121px;
-    height: 121px;
-    float: left;
-    text-align: center;
-    /*border: 2px #ffffff solid;*/
-    vertical-align: middle;
-    font-size: 32px;
-    line-height: 121px;
-    --c: #3cb6d4;
-    color: var(--c);
-    border: 2px solid var(--c);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: sans-serif;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    transition: 0.5s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    font-family: "Permanent Marker";
-}
-
-
-/* hover effect start */
-/*.item:after {*/
-/*    content: "";*/
-/*    display:block;*/
-/*    border-top: 0 #3cb6d4 solid;*/
-/*    border-bottom: 15px transparent solid;*/
-/*    border-left: 15px #3cb6d4 solid;*/
-/*    position:absolute;*/
-/*    top:0;*/
-/*    left:0;*/
-/*    width:0;*/
-/*    !*   z-index:-1; *!*/
-/*    overflow:hidden;*/
-/*}*/
-
-/*.item:hover:after {*/
-/*    z-index:-1;*/
-/*    border-left: 302px solid #3cb6d4;*/
-/*    border-bottom:302px solid transparent;*/
-/*    overflow:hidden;*/
-/*    background-color:#3cb6d4;*/
-/*}*/
-
-/*.item:hover {*/
-/*    color: black;*/
-/*    overflow:hidden;*/
-/*    !*   margin-bottom: 10px; *!*/
-/*    cursor:pointer;*/
-/*}*/
-
-/*.tile:hover, .tile:after, .tile {*/
-/*    -webkit-transition: 0.5s color ease;*/
-/*    -moz-transition: 0.5s color ease;*/
-/*    -o-transition: 0.5s color ease;*/
-/*    transition: 0.5s color ease;*/
-/*}*/
-
-/*.tile:hover, .tile:after {*/
-/*    -webkit-transition: 0.5s border ease;*/
-/*    -moz-transition: 0.5s border ease;*/
-/*    -o-transition: 0.5s border ease;*/
-/*    transition: 0.5s border ease;*/
-/*}*/
-
-/*.tile:after {*/
-/*    overflow:hidden;*/
-/*}*/
-
-/*.tile:before, .tile:hover:before, .tile:hover:after {*/
-/*    -webkit-transition: 0.75s all ease;*/
-/*    -moz-transition: 0.75s all ease;*/
-/*    -o-transition: 0.75s all ease;*/
-/*    transition: 0.75s all ease;*/
-/*}*/
-
-/*effect end*/
-
-
-/*.tile ul li {*/
-/*    --c: #3cb6d4;*/
-/*    vertical-align: center;*/
-/*    color: var(--c);*/
-/*    font-size: 16px;*/
-/*    border: 2px solid var(--c);*/
-/*    width: 121px;*/
-/*    height: 121px;*/
-/*    text-transform: uppercase;*/
-/*    font-weight: bold;*/
-/*    font-family: sans-serif;*/
-/*    letter-spacing: 0.1em;*/
-/*    text-align: center;*/
-/*    line-height: 3em;*/
-/*    position: relative;*/
-/*    overflow: hidden;*/
-/*    z-index: 1;*/
-/*    transition: 0.5s;*/
-/*    margin: 1em;*/
-/*}*/
-
-/*.tile ul li span {*/
-/*    position: absolute;*/
-/*    width: 100%;*/
-/*    height: 100%;*/
-/*    background-color: var(--c);*/
-/*    transform: translateY(150%);*/
-/*    border-radius: 50%;*/
-/*    left: calc((var(--n) - 1) * 25%);*/
-/*    transition: 0.5s;*/
-/*    transition-delay: calc((var(--n) - 1) * 0.1s);*/
-/*    z-index: -1;*/
-/*}*/
-
-/*.tile ul li:hover {*/
-/*    color: black;*/
-/*}*/
-
-/*.tile ul li:hover span {*/
-/*    transform: translateY(0) scale(2);*/
-/*}*/
-
-/*.tile ul li span:nth-child(1) {*/
-/*    --n: 1;*/
-/*}*/
-
-
-/* this worked but messed up my transintion animation */
-/*.tile:hover {*/
-/*    animation: 2s counterclockwise infinite;*/
-/*}*/
-
-/*.tile:hover::before, tile:hover::after {*/
-/*    display: block;*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    width: 250px;*/
-/*    height: 250px;*/
-/*    background: #3cb6d4;*/
-/*    border-radius: 75px;*/
-/*    z-index: -1;*/
-/*    animation: 1s clockwise infinite;*/
-/*}*/
-
-/*.tile:hover:after {*/
-/*    background: #3cb6d4;*/
-/*    opacity: 60%;*/
-/*    !*box-shadow: 0 5px 35px 0px rgb(255, 125, 247);*!*/
-/*    animation: 2s counterclockwise infinite;*/
-/*}*/
-
-/*@keyframes clockwise {*/
-/*    0% {*/
-/*        top: -5px;*/
-/*        left: 0;*/
-/*    }*/
-/*    12% {*/
-/*        top: -2px;*/
-/*        left: 2px;*/
-/*    }*/
-/*    25% {*/
-/*        top: 0;*/
-/*        left: 5px;*/
-/*    }*/
-/*    37% {*/
-/*        top: 2px;*/
-/*        left: 2px;*/
-/*    }*/
-/*    50% {*/
-/*        top: 5px;*/
-/*        left: 0;*/
-/*    }*/
-/*    62% {*/
-/*        top: 2px;*/
-/*        left: -2px;*/
-/*    }*/
-/*    75% {*/
-/*        top: 0;*/
-/*        left: -5px;*/
-/*    }*/
-/*    87% {*/
-/*        top: -2px;*/
-/*        left: -2px;*/
-/*    }*/
-/*    100% {*/
-/*        top: -5px;*/
-/*        left: 0;*/
-/*    }*/
-/*}*/
-
-/*@keyframes counterclockwise {*/
-/*    0% {*/
-/*        top: -5px;*/
-/*        right: 0;*/
-/*    }*/
-/*    12% {*/
-/*        top: -2px;*/
-/*        right: 2px;*/
-/*    }*/
-/*    25% {*/
-/*        top: 0;*/
-/*        right: 5px;*/
-/*    }*/
-/*    37% {*/
-/*        top: 2px;*/
-/*        right: 2px;*/
-/*    }*/
-/*    50% {*/
-/*        top: 5px;*/
-/*        right: 0;*/
-/*    }*/
-/*    62% {*/
-/*        top: 2px;*/
-/*        right: -2px;*/
-/*    }*/
-/*    75% {*/
-/*        top: 0;*/
-/*        right: -5px;*/
-/*    }*/
-/*    87% {*/
-/*        top: -2px;*/
-/*        right: -2px;*/
-/*    }*/
-/*    100% {*/
-/*        top: -5px;*/
-/*        right: 0;*/
-/*    }*/
-/*}*/
 
 
 /*select option styling*/
@@ -559,8 +274,51 @@ container {
 }
 /*end select option styling*/
 
+/*h2 {*/
+/*    color: #ff9800;*/
+/*    text-align: center;*/
+/*    font-size: 30px;*/
+
+/*}*/
+/*tile h2:after{*/
+/*    color: #3cb6d4;*/
+/*}*/
+h2{
+    font-size: 26pt;
+}
+h2:after{
+    font-size: 26pt;
+}
 
 /*this is the  curtain hover effect */
+.tile {
+    color: #ff9800;
+    width: 121px;
+    height: 121px;
+    float: left;
+    text-align: center;
+    /*border: 2px #ffffff solid;*/
+    vertical-align: middle;
+    font-size: 26px;
+    line-height: 121px;
+    --c: #3cb6d4;
+    /*color: var(--c);*/
+    border: 2px solid var(--c);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Permanent Marker";
+    font-color: #ff9800;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "Permanent Marker";
+    font-size: 26pt;
+}
 .tile::before {
     left: 0;
     top: 0;
@@ -569,12 +327,12 @@ container {
     float: left;
     text-align: center;
     /*border: 2px #ffffff solid;*/
-    font-size: 32px;
+    font-size: 26px;
     font-family: "Permanent Marker";
     /*line-height: 100px;*/
     --c: #3cb6d4;
     color: var(--c);
-    font-size: 40px;
+    color: #ff9800;
     border: 2px solid var(--c);
     text-transform: uppercase;
     font-weight: bold;
@@ -602,6 +360,7 @@ container {
     overflow: hidden;
 }
 
+
 .tile:hover:after {
     z-index: -1;
     border-left: 302px solid #ef6c00;
@@ -611,8 +370,8 @@ container {
     opacity: 60%;
 }
 
-
 .tile:hover {
+    font-size: 26px;
     color: #0A3940;
     overflow: hidden;
     cursor: pointer;
