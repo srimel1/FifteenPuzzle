@@ -58,6 +58,8 @@ const background = ["castle", "castle_2", "castle_3", "castle_4"];
 
 
 
+
+
 /***
  * directionally aware hover effects
  */
@@ -121,6 +123,8 @@ el.addEventListener('mouseup', function () {
 /* end directionally aware hover effect*/
 
 
+
+/* board functions */
 
 /**
  * Starts the game, displays random background, until the user decides the choose one.
@@ -288,10 +292,30 @@ function animateMovement(clickable_id, empty_id) {
 /**
  * check to see if user won...
  */
-//TODO needs to be finished
+//TODO needs a win sequence
 function checkForWin() {
-    if (squares.toString() == shuffled.toString()) { // Test the image, time and number of turns by swapping == to !=
-//TODO
-
+    if (squares.toString() == shuffled.toString()) {
+    //TODO
     }
+}
+
+/***
+ * find the high score and user
+ */
+function saveScore(){
+    //TODO
+}
+
+/***
+ * find high score
+ */
+function getHighScore(){
+    //TODO
+}
+
+/***
+ * display the leaderboard
+ */
+function displayLeaderBoard(){
+    //TODO
 }
