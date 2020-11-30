@@ -168,7 +168,7 @@ function changeBackground() {
 
 
 /***
- * shuffles the board randomly generated numbers
+ * shuffles the board using randomly generated numbers
  */
 function shuffleBoard() {
     shuffled = squares.slice(); // Reinitialize array
