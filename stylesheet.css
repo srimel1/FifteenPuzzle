@@ -1,10 +1,14 @@
 html, body {
-    /*height: 100%;*/
     text-decoration: none;
     text-align: center;
     /*display: block;*/
     margin-left: auto;
     margin-right: auto
+}
+
+img.resize {
+    height: 500px;
+    width: 500px;
 }
 
 #wrapper {
@@ -18,46 +22,113 @@ html, body {
 #main {
     box-shadow: 0 5px 35px 0px rgb(0, 0, 0);
     margin: auto;
-    width:500px;
-    height:500px;
+    width: 500px;
+    height: 500px;
     position: relative;
 }
 
 h1 {
     color: #ff9800;
-    margin:auto;
+    margin: auto;
     text-align: center;
     margin: auto;
+}
+h2 {
+    font-size: 26pt;
+}
+
+h2:after {
+    font-size: 26pt;
 }
 
 
 a {
     font-color: #ff9800;
     text-decoration: none;
-    border:0;
+    border: 0;
 }
 
-.castle { background: url("castle.jpg"); }
-.castle_2       { background: url("castle_2.jpg"); }
-.castle_3      { background: url("castle_3.jpg"); }
-.castle_4        { background: url("castle_4.jpg"); }
+.castle {
+    background: url("castle.jpg");
+    height: 500px;
+    width: 500px;
+}
 
-#one      { background-position: 0      0;      }
-#two      { background-position: -125px 0;      }
-#three    { background-position: -250px 0;      }
-#four     { background-position: -375px 0;      }
-#five     { background-position: 0      -125px; }
-#six      { background-position: -125px -125px; }
-#seven    { background-position: -250px -125px; }
-#eight    { background-position: -375px -125px; }
-#nine     { background-position: 0      -250px; }
-#ten      { background-position: -125px -250px; }
-#eleven   { background-position: -250px -250px; }
-#twelve   { background-position: -375px -250px; }
-#thirteen { background-position: 0      -375px; }
-#fourteen { background-position: -125px -375px; }
-#fifteen  { background-position: -250px -375px; }
-#sixteen  { border: 2px solid #3cb6d4 !important; }
+.castle_2 {
+    background: url("castle_2.jpg");
+}
+
+.castle_3 {
+    background: url("castle_3.jpg");
+}
+
+.castle_4 {
+    background: url("castle_6.jpg");
+}
+
+#one {
+    background-position: 0 0;
+}
+
+#two {
+    background-position: -125px 0;
+}
+
+#three {
+    background-position: -250px 0;
+}
+
+#four {
+    background-position: -375px 0;
+}
+
+#five {
+    background-position: 0 -125px;
+}
+
+#six {
+    background-position: -125px -125px;
+}
+
+#seven {
+    background-position: -250px -125px;
+}
+
+#eight {
+    background-position: -375px -125px;
+}
+
+#nine {
+    background-position: 0 -250px;
+}
+
+#ten {
+    background-position: -125px -250px;
+}
+
+#eleven {
+    background-position: -250px -250px;
+}
+
+#twelve {
+    background-position: -375px -250px;
+}
+
+#thirteen {
+    background-position: 0 -375px;
+}
+
+#fourteen {
+    background-position: -125px -375px;
+}
+
+#fifteen {
+    background-position: -250px -375px;
+}
+
+#sixteen {
+    border: 2px solid #3cb6d4 !important;
+}
 
 .clickable {
     -webkit-transition: all 0.5s ease-in-out;
@@ -129,6 +200,7 @@ h1 {
     margin-left: .7em;
     text-decoration: none;
 }
+
 h1:before, h1:after {
     content: "";
     display: inline-block;
@@ -138,14 +210,17 @@ h1:before, h1:after {
     border-bottom: 1px solid;
     text-decoration: none;
 }
+
 h1:after {
     margin: 0 -55% 0 .5em;
     text-decoration: none;
 }
+
 span {
     display: inline-block;
     vertical-align: middle;
 }
+
 .row:after {
     content: "";
     display: table;
@@ -220,7 +295,6 @@ nav ul li span:nth-child(4) {
 }
 
 
-
 /*select option styling*/
 container {
     margin-top: 10%;
@@ -272,23 +346,10 @@ container {
 .box select option {
     padding: 30px;
 }
+
 /*end select option styling*/
 
-/*h2 {*/
-/*    color: #ff9800;*/
-/*    text-align: center;*/
-/*    font-size: 30px;*/
 
-/*}*/
-/*tile h2:after{*/
-/*    color: #3cb6d4;*/
-/*}*/
-h2{
-    font-size: 26pt;
-}
-h2:after{
-    font-size: 26pt;
-}
 
 /*this is the  curtain hover effect */
 .tile {
@@ -319,6 +380,7 @@ h2:after{
     font-family: "Permanent Marker";
     font-size: 26pt;
 }
+
 .tile::before {
     left: 0;
     top: 0;
@@ -376,6 +438,7 @@ h2:after{
     overflow: hidden;
     cursor: pointer;
 }
+
 .tile:after {
     overflow: hidden;
 }
@@ -386,5 +449,6 @@ h2:after{
     -o-transition: 0.75s all ease;
     transition: 0.75s all ease;
 }
+
 /*hover effect end*/
 
