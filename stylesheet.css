@@ -3,7 +3,14 @@ html, body {
     text-align: center;
     /*display: block;*/
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    margin: 0;
+    padding: 0;
+    font-family: "Permanent Marker";
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
 }
 
 img.resize {
@@ -48,6 +55,7 @@ a {
     border: 0;
 }
 
+/*background images*/
 .castle {
     background: url("castle.jpg");
     height: 500px;
@@ -65,6 +73,9 @@ a {
 .castle_4 {
     background: url("castle_6.jpg");
 }
+/*end background images*/
+
+/*individual game board tiles*/
 
 #one {
     background-position: 0 0;
@@ -130,6 +141,10 @@ a {
     border: 2px solid #3cb6d4 !important;
 }
 
+/* end game board tiles */
+
+/* gameboard styling */
+
 .clickable {
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -148,7 +163,11 @@ a {
     transform-origin: top left;
 }
 
+/* end game board styling */
 
+
+
+/* game board move animations */
 .animate-up {
     -webkit-transform: translate(0, -125px);
     -moz-transform: translate(0, -125px);
@@ -180,6 +199,8 @@ a {
     -o-transform: translate(125px, 0);
     transform: translate(125px, 0);
 }
+
+/* end game board animations */
 
 body {
     font-family: "Permanent Marker";
@@ -216,25 +237,28 @@ h1:after {
     text-decoration: none;
 }
 
-span {
+
+
+/*shuffle button start*/
+header {
     display: inline-block;
     vertical-align: middle;
 }
 
-.row:after {
+.header:after {
     content: "";
     display: table;
     clear: both;
     background-color: transparent;
 }
 
-nav ul {
+header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-nav ul li {
+header ul li {
     /*color: #ff9800;*/
     --c: #ff9800;
     vertical-align: center;
@@ -257,7 +281,7 @@ nav ul li {
     margin: 1em;
 }
 
-nav ul li span {
+header ul li span {
     position: absolute;
     width: 125px;
     height: 125px;
@@ -270,41 +294,43 @@ nav ul li span {
     z-index: -1;
 }
 
-nav ul li:hover {
+header ul li:hover {
     color: #0A3940;
 }
 
-nav ul li:hover span {
+header ul li:hover span {
     transform: translateY(0) scale(2);
 }
 
-nav ul li span:nth-child(1) {
+header ul li span:nth-child(1) {
     --n: 1;
 }
 
-nav ul li span:nth-child(2) {
+header ul li span:nth-child(2) {
     --n: 2;
 }
 
-nav ul li span:nth-child(3) {
+header ul li span:nth-child(3) {
     --n: 3;
 }
 
-nav ul li span:nth-child(4) {
+header ul li span:nth-child(4) {
     --n: 4;
 }
 
+/*shuffle button end*/
+
 
 /*select option styling*/
-container {
-    margin-top: 10%;
+con {
+    margin-top: 80%;
     width: 30%;
     align-content: center;
 }
 
 .box {
     position: absolute;
-    top: 10%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -392,7 +418,7 @@ container {
     font-size: 26px;
     font-family: "Permanent Marker";
     /*line-height: 100px;*/
-    --c: #3cb6d4;
+    --c: #ff9800;
     color: var(--c);
     color: #ff9800;
     border: 2px solid var(--c);
@@ -452,3 +478,233 @@ container {
 
 /*hover effect end*/
 
+
+
+
+
+/*nav effects*/
+html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+
+body {
+    line-height: 1
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+/*blockquote:before, blockquote:after, q:before, q:after {*/
+/*    content: '';*/
+/*    content: none*/
+/*}*/
+
+/*table {*/
+/*    border-collapse: collapse;*/
+/*    border-spacing: 0*/
+/*}*/
+
+body {
+    min-width: 320px;
+    /*padding: 30px;*/
+    background: #0A3940;
+    font-family: "Permanent Marker";
+}
+
+.container {
+    width: 60%;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1.container {
+    color: #0A3940;
+    font-weight: bold;
+    margin-top: 2rem;
+    font-size: 24px;
+}
+
+p.container {
+    color: #ef6c00;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    max-width: 50ex;
+}
+
+p.large.container {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+a.container {
+    color: #3cb6d4;
+}
+
+.greedy-nav.container {
+    border-top: #ff9800 1px solid;
+    border-bottom: #ff9800 1px solid;
+
+    position: relative;
+    min-width: 250px;
+    /*background: #fff;*/
+}
+
+.greedy-nav a.container {
+    display: block;
+    padding: 20px 30px;
+    background: #0A3940;
+    font-size: 18px;
+    color: #3cb6d4;
+    text-decoration: none;
+}
+
+.greedy-nav a:hover.container {
+    color: #ef6c00;
+}
+
+.greedy-nav button.container {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    padding: 0 15px;
+    border: 0;
+    outline: none;
+    background-color: #f57c00;
+    color: #3cb6d4;
+    cursor: pointer;
+}
+
+.greedy-nav button:hover.container {
+    background-color: #ef6c00;
+}
+
+.greedy-nav button::after.container {
+    content: attr(count);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -16px;
+    top: 12px;
+    text-align: center;
+    background-color: #ef6c00;
+    color: #fff; /*circle number*/
+    font-size: 14px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    font-weight: bold;
+}
+
+.greedy-nav button:hover::after.container {
+    transform: scale(1.075);
+}
+
+.greedy-nav .hamburger.container {
+    position: relative;
+    width: 32px;
+    height: 4px;
+    background: #fff; /*menu bars*/
+    margin: auto;
+}
+
+.greedy-nav .hamburger:before.container,
+.greedy-nav .hamburger:after.container {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 4px;
+    background: #fff; /*menu bars*/
+}
+
+.greedy-nav .hamburger:before.container {
+    top: -8px;
+}
+
+.greedy-nav .hamburger:after.container {
+    bottom: -8px;
+}
+
+.greedy-nav .visible-links.container {
+    display: inline-table;
+}
+
+.greedy-nav .visible-links li.container {
+    display: table-cell;
+    border-left: 1px solid #ff9800; /*separators between links*/
+}
+
+.greedy-nav .hidden-links.container {
+    position: absolute;
+    right: 0px;
+    top: 100%;
+}
+
+.greedy-nav .hidden-links li.container {
+    display: block;
+    border: 1px solid #ff9800; /*dropdown menu border*/
+}
+
+.greedy-nav .visible-links li:first-child.container {
+    font-weight: bold;
+}
+
+.greedy-nav .visible-links li:first-child a.container {
+    color: #ef6c00 !important; /*title font color*/
+}
+
+.greedy-nav .hidden {
+    visibility: hidden;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    font-family: "Permanent Marker";
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+/*article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {*/
+/*    display: block*/
+/*}*/
+
+body {
+    line-height: 1
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before.container, blockquote:after.container, q:before.container, q:after.container {
+    content: '';
+    content: none
+}
+
+table.container {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+
+/*nav end*/

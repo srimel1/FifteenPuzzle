@@ -411,23 +411,10 @@
         }, {}]
     }, {}, ["loader"]);</script>
 
-<!--    <link rel="apple-touch-icon" type="image/png"-->
-<!--          href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png"/>-->
-<!--    <meta name="apple-mobile-web-app-title" content="CodePen">-->
-
-<!--    <link rel="shortcut icon" type="image/x-icon"-->
-<!--          href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico"/>-->
-
-
-<!--    <link rel="mask-icon" type=""-->
-<!--          href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"-->
-<!--          color="#111"/>-->
-
 
     <title>Fifteen Puzzle</title>
 
     <link rel="stylesheet" href="nav.css">
-
 
     <style>
         body {
@@ -438,7 +425,7 @@
         }
 
         .container {
-            width: 60%;
+            width: 80%;
             align-content: center;
             margin-left: auto;
             margin-right: auto;
@@ -464,13 +451,15 @@
             margin-top: 2rem;
         }
 
-        a {
-            color: #3cb6d4;
-        }
+        /*a {*/
+        /*    color: #0e353e;*/
+        /*}*/
 
         .greedy-nav {
+
             border-top: #ff9800 1px solid;
             border-bottom: #ff9800 1px solid;
+            box-shadow: 0 5px 35px 0px rgb(0, 0, 0);
 
             position: relative;
             min-width: 250px;
@@ -542,7 +531,7 @@
             left: 0;
             width: 32px;
             height: 4px;
-            background: #fff;  /*menu bars*/
+            background: #fff; /*menu bars*/
         }
 
         .greedy-nav .hamburger:before {
@@ -564,6 +553,8 @@
 
         .greedy-nav .hidden-links {
             position: absolute;
+            box-shadow: 0 5px 35px 0px rgb(0, 0, 0);
+
             right: 0px;
             top: 100%;
         }
@@ -601,22 +592,25 @@
 
 </head>
 
-<body translate="no">
+<!--<body translate="no">-->
+<body onload="initializeGame()">
 <div class="container">
     <nav class='greedy-nav'>
         <button>
             <div class="hamburger"></div>
         </button>
         <ul class='visible-links'>
+
             <li><a target="_blank" href='#'>Fifteen Squares</a></li>
             <li><a href='#'>Home</a></li>
             <li><a href='#'>Leaderboard</a></li>
-            <li><a href='#'>Score: </a></li>
             <li><a href='#'>Start Over</a></li>
-            <li><a href='#'>Background One</a></li>
-            <li><a href='#'>Background Two</a></li>
-            <li><a href='#'>Background Three</a></li>
-            <li><a href='#'>Background Four</a></li>
+            <li><a href='#'>Shuffle </a></li>
+            <li><a href='http://gsu.edu'>Georgia State University</a></li>
+            <li><a href='http://codd.cs.gsu.edu/~srimel1'>Stephanie Rimel Webpage</a></li>
+            <li><a href='#'>      Chamie  Lastname Webpage     </a></li>
+            <li><a href='#'>     A Lightning  Webpage   </a></li>
+            <li><a href='#'>        Danny T   Lastname Webpage         </a></li>
         </ul>
         <ul class='hidden-links hidden'></ul>
     </nav>
@@ -691,7 +685,59 @@
         //# sourceURL=pen.js
     </script>
 </div>
-</body>
 
+<br><br><br><br>
+
+<!--game board start-->
+<div id="main">
+    <div id="one" class="tile"><h2>1</h2></div>
+    <div id="two" class="tile"><h2>2</h2></div>
+    <div id="three" class="tile"><h2>3</h2></div>
+    <div id="four" class="tile"><h2>4</h2></div>
+    <div id="five" class="tile"><h2>5</h2></div>
+    <div id="six" class="tile"><h2>6</h2></div>
+    <div id="seven" class="tile"><h2>7</h2></div>
+    <div id="eight" class="tile"><h2>8</h2></div>
+    <div id="nine" class="tile"><h2>9</h2></div>
+    <div id="ten" class="tile"><h2>10</h2></div>
+    <div id="eleven" class="tile"><h2>11</h2></div>
+    <div id="twelve" class="tile"><h2>12</h2></div>
+    <div id="thirteen" class="tile"><h2>13</h2></div>
+    <div id="fourteen" class="tile"><h2>14</h2></div>
+    <div id="fifteen" class="tile"><h2>15</h2></div>
+    <div id="sixteen" class="tile"></div>
+</div>
+<!--game board end-->
+
+
+<!--shuffle div start-->
+<center>
+    <header>
+        <ul>
+            <li>
+                <a onclick="shuffleBoard()">shuffle</a>
+                <span></span><span></span><span></span><span></span></li>
+        </ul>
+    </header>
+</center>
+<!--shuffle div end-->
+
+<!--background options start-->
+<div id="con">
+    <div class="box">
+        <select id="castles" name="castles" title="Backgrounds" onchange="changeBackground()">
+            <option value="castle" id="castle">Castle 1</option>
+            <option value="castle_2" id="castle_2">Castle 2</option>
+            <option value="castle_3" id="castle_3">Castle 3</option>
+            <option value="castle_4" id="castle_4">Castle 4</option>
+        </select>
+    </div>
+</div>
+<!--gameboard options end-->
+
+
+<script type="text/javascript" src="fifteen.js"></script>
+</body>
+</body>
 </html>
 
