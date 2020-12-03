@@ -435,7 +435,7 @@
             color: #0A3940;
             font-weight: bold;
             margin-top: 2rem;
-            font-size: 24px;
+            font-size: 18px;
         }
 
         p {
@@ -470,7 +470,7 @@
             display: block;
             padding: 20px 30px;
             background: #0A3940;
-            font-size: 18px;
+            font-size: 14px;
             color: #3cb6d4;
             text-decoration: none;
         }
@@ -594,97 +594,94 @@
 
 <!--<body translate="no">-->
 <body onload="initializeGame()">
-<div class="container">
-    <nav class='greedy-nav'>
-        <button>
-            <div class="hamburger"></div>
-        </button>
-        <ul class='visible-links'>
 
-            <li><a target="_blank" href='#'>Fifteen Squares</a></li>
-            <li><a href='#'>Home</a></li>
-            <li><a href='#'>Georgia State Computer Science</a></li>
-            <li><a href='#'>Start Over</a></li>
-            <li><a onclick="shuffleBoard()" >Shuffle </a></li>
-            <li><a href='http://gsu.edu'>Georgia State University</a></li>
-            <li><a href='http://codd.cs.gsu.edu/~srimel1'>Stephanie Rimel Webpage</a></li>
-            <li><a href='https://codd.cs.gsu.edu/~jnguyen103/'>James  Nguyen Webpage</a></li>
-            <li><a href='https://codd.cs.gsu.edu/~alightning1/index.html'>Alexandria Lightning Webpage</a></li>
-            <li><a href='#'>Daniel Thomas Webpage</a></li>
-        </ul>
-        <ul class='hidden-links hidden'></ul>
-    </nav>
+<nav class='greedy-nav'>
+    <button>
+        <div class="hamburger"></div>
+    </button>
+    <ul class='visible-links'>
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <li><a target="_blank" href='#'>Fifteen Squares</a></li>
+        <li><a onclick="shuffleBoard()">Shuffle </a></li>
+        <li><a href='http://gsu.edu'>Georgia State University</a></li>
+        <li><a href='http://codd.cs.gsu.edu/~srimel1'>Stephanie Rimel Webpage</a></li>
+        <li><a href='https://codd.cs.gsu.edu/~jnguyen103/'>James Nguyen Webpage</a></li>
+        <li><a href='https://codd.cs.gsu.edu/~alightning1/index.html'>Alexandria Lightning Webpage</a></li>
+        <li><a href='#'>Daniel Thomas Webpage</a></li>
+    </ul>
+    <ul class='hidden-links hidden'></ul>
+</nav>
 
-    <script id="rendered-js">
-        var $nav = $('.greedy-nav');
-        var $btn = $('.greedy-nav button');
-        var $vlinks = $('.greedy-nav .visible-links');
-        var $hlinks = $('.greedy-nav .hidden-links');
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-        var breaks = [];
+<script id="rendered-js">
+    var $nav = $('.greedy-nav');
+    var $btn = $('.greedy-nav button');
+    var $vlinks = $('.greedy-nav .visible-links');
+    var $hlinks = $('.greedy-nav .hidden-links');
 
-        function updateNav() {
+    var breaks = [];
 
-            var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
+    function updateNav() {
 
-            // The visible list is overflowing the nav
-            if ($vlinks.width() > availableSpace) {
+        var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
 
-                // Record the width of the list
-                breaks.push($vlinks.width());
+        // The visible list is overflowing the nav
+        if ($vlinks.width() > availableSpace) {
 
-                // Move item to the hidden list
-                $vlinks.children().last().prependTo($hlinks);
+            // Record the width of the list
+            breaks.push($vlinks.width());
 
-                // Show the dropdown btn
-                if ($btn.hasClass('hidden')) {
-                    $btn.removeClass('hidden');
-                }
+            // Move item to the hidden list
+            $vlinks.children().last().prependTo($hlinks);
 
-                // The visible list is not overflowing
-            } else {
-
-                // There is space for another item in the nav
-                if (availableSpace > breaks[breaks.length - 1]) {
-
-                    // Move the item to the visible list
-                    $hlinks.children().first().appendTo($vlinks);
-                    breaks.pop();
-                }
-
-                // Hide the dropdown btn if hidden list is empty
-                if (breaks.length < 1) {
-                    $btn.addClass('hidden');
-                    $hlinks.addClass('hidden');
-                }
+            // Show the dropdown btn
+            if ($btn.hasClass('hidden')) {
+                $btn.removeClass('hidden');
             }
 
-            // Keep counter updated
-            $btn.attr("count", breaks.length);
+            // The visible list is not overflowing
+        } else {
 
-            // Recur if the visible list is still overflowing the nav
-            if ($vlinks.width() > availableSpace) {
-                updateNav();
+            // There is space for another item in the nav
+            if (availableSpace > breaks[breaks.length - 1]) {
+
+                // Move the item to the visible list
+                $hlinks.children().first().appendTo($vlinks);
+                breaks.pop();
             }
 
+            // Hide the dropdown btn if hidden list is empty
+            if (breaks.length < 1) {
+                $btn.addClass('hidden');
+                $hlinks.addClass('hidden');
+            }
         }
 
-        // Window listeners
+        // Keep counter updated
+        $btn.attr("count", breaks.length);
 
-        $(window).resize(function () {
+        // Recur if the visible list is still overflowing the nav
+        if ($vlinks.width() > availableSpace) {
             updateNav();
-        });
+        }
 
-        $btn.on('click', function () {
-            $hlinks.toggleClass('hidden');
-        });
+    }
 
+    // Window listeners
+
+    $(window).resize(function () {
         updateNav();
-        //# sourceURL=pen.js
-    </script>
-</div>
+    });
+
+    $btn.on('click', function () {
+        $hlinks.toggleClass('hidden');
+    });
+
+    updateNav();
+    //# sourceURL=pen.js
+</script>
+
 
 <!--displays the win scene-->
 <span id="win"></span>
