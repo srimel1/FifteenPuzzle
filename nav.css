@@ -34,7 +34,7 @@ blockquote, q {
      min-width: 320px;
      /*padding: 30px;*/
      background: #0A3940;
-     font-family: "Permanent Marker";
+     font-family: 'Permanent Marker', cursive;
  }
 
 .container {
@@ -188,7 +188,7 @@ a.container {
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
-    font-family: "Permanent Marker";
+font-family: 'Permanent Marker', cursive;
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -241,7 +241,7 @@ table.container {
     border: 2px solid var(--c);
     text-transform: uppercase;
     font-weight: bold;
-    font-family: "Permanent Marker";
+font-family: 'Permanent Marker', cursive;
     font-color: #ff9800;
     position: relative;
     overflow: hidden;
@@ -251,7 +251,7 @@ table.container {
     align-items: center;
     justify-content: center;
     position: relative;
-    font-family: "Permanent Marker";
+font-family: 'Permanent Marker', cursive;
     font-size: 26pt;
 }
 
@@ -264,7 +264,7 @@ table.container {
     text-align: center;
     /*border: 2px #ffffff solid;*/
     font-size: 26px;
-    font-family: "Permanent Marker";
+font-family: 'Permanent Marker', cursive;
     /*line-height: 100px;*/
     --c: #ff9800;
     color: var(--c);
@@ -599,7 +599,7 @@ con {
 }
 
 .box select {
-    font-family: "Permanent Marker";
+font-family: 'Permanent Marker', cursive;
     background-color: #12707e;
     color: #ff9800;
     padding: 12px;

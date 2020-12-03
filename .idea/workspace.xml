@@ -19,14 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="561c7fe8-219f-4ea4-9f7d-d9598cc0dc3b" name="Default Changelist" comment="//TODO - win sequence&#10;//TODO - cookies for leader board&#10;//TODO - Stephanie will finish navbar in test.html&#10;//TODO - I will fix hover effect messing with move animations&#10;//TODO - get the high scores and users and display leaderboard using cookies and sessions&#10;//TODO - calculate the score by number of moves and time taken to complete the puzzle&#10;&#10;&#10;fixed hover and animations and sizing of the initial board as well as the font sizing">
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    <list default="true" id="561c7fe8-219f-4ea4-9f7d-d9598cc0dc3b" name="Default Changelist" comment="//TODO - win sequence&#10;//TODO - cookies for leader board&#10;//TODO - get the high scores and users and display leaderboard using cookies and sessions if you want&#10;//TODO - calculate the score by number of moves if you want to&#10;&#10;&#10;Finished navigation and implemented with the board">
+      <change afterPath="$PROJECT_DIR$/intro.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rules.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rules.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fifteen.js" beforeDir="false" afterPath="$PROJECT_DIR$/fifteen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nav.css" beforeDir="false" afterPath="$PROJECT_DIR$/nav.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.css" beforeDir="false" afterPath="$PROJECT_DIR$/test.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +81,8 @@
       <updated>1606706781935</updated>
       <workItem from="1606706784325" duration="1411000" />
       <workItem from="1606709129333" duration="19662000" />
-      <workItem from="1606878230960" duration="9775000" />
+      <workItem from="1606878230960" duration="15928000" />
+      <workItem from="1606958800209" duration="6046000" />
     </task>
     <task id="LOCAL-00001" summary="//TODO win animation&#10;//TODO cookies for leader board&#10;//TODO - Stephanie will finish navbar in test.html">
       <created>1606714683221</created>
@@ -116,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606731176686</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="//TODO - win sequence&#10;//TODO - cookies for leader board&#10;//TODO - get the high scores and users and display leaderboard using cookies and sessions if you want&#10;//TODO - calculate the score by number of moves if you want to&#10;&#10;&#10;Finished navigation and implemented with the board">
+      <created>1606896073810</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606896073810</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,13 +142,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="//TODO win animation&#10;//TODO cookies for leader board&#10;//TODO - Stephanie will finish navbar in test.html" />
     <MESSAGE value="//TODO - win sequence&#10;//TODO - cookies for leader board&#10;//TODO - Stephanie will finish navbar in test.html&#10;//TODO - I will fix hover effect messing with move animations&#10;//TODO - get the high scores and users and display leaderboard using cookies and sessions&#10;//TODO - calculate the score by number of moves and time taken to complete the puzzle" />
     <MESSAGE value="//TODO - win sequence&#10;//TODO - cookies for leader board&#10;//TODO - Stephanie will finish navbar in test.html&#10;//TODO - I will fix hover effect messing with move animations&#10;//TODO - get the high scores and users and display leaderboard using cookies and sessions&#10;//TODO - calculate the score by number of moves and time taken to complete the puzzle&#10;&#10;&#10;fixed hover and animations and sizing of the initial board" />
     <MESSAGE value="//TODO - win sequence&#10;//TODO - cookies for leader board&#10;//TODO - Stephanie will finish navbar in test.html&#10;//TODO - I will fix hover effect messing with move animations&#10;//TODO - get the high scores and users and display leaderboard using cookies and sessions&#10;//TODO - calculate the score by number of moves and time taken to complete the puzzle&#10;&#10;&#10;fixed hover and animations and sizing of the initial board as well as the font sizing" />
-    <option name="LAST_COMMIT_MESSAGE" value="//TODO - win sequence&#10;//TODO - cookies for leader board&#10;//TODO - Stephanie will finish navbar in test.html&#10;//TODO - I will fix hover effect messing with move animations&#10;//TODO - get the high scores and users and display leaderboard using cookies and sessions&#10;//TODO - calculate the score by number of moves and time taken to complete the puzzle&#10;&#10;&#10;fixed hover and animations and sizing of the initial board as well as the font sizing" />
+    <MESSAGE value="//TODO - win sequence&#10;//TODO - cookies for leader board&#10;//TODO - get the high scores and users and display leaderboard using cookies and sessions if you want&#10;//TODO - calculate the score by number of moves if you want to&#10;&#10;&#10;Finished navigation and implemented with the board" />
+    <option name="LAST_COMMIT_MESSAGE" value="//TODO - win sequence&#10;//TODO - cookies for leader board&#10;//TODO - get the high scores and users and display leaderboard using cookies and sessions if you want&#10;//TODO - calculate the score by number of moves if you want to&#10;&#10;&#10;Finished navigation and implemented with the board" />
   </component>
   <component name="WindowStateProjectService">
     <state x="525" y="237" key="#Notifications" timestamp="1606715382404">
@@ -169,21 +181,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="362" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606731180578" />
-    <state x="94" y="194" width="1336" height="536" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606889762160">
+    <state x="94" y="194" width="1336" height="536" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606956766358">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="94" y="194" width="1336" height="536" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1606889762160" />
+    <state x="94" y="194" width="1336" height="536" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1606956766358" />
     <state x="145" y="160" width="1336" height="536" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1606718107147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="145" y="160" width="1336" height="536" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1606718107147" />
-    <state x="233" y="270" width="582" height="534" key="find.popup" timestamp="1606894343352">
+    <state x="233" y="270" width="582" height="534" key="find.popup" timestamp="1606965211777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="233" y="270" width="582" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1606894343352" />
-    <state x="489" y="176" width="672" height="677" key="run.anything.popup" timestamp="1606895244477">
+    <state x="233" y="270" width="582" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1606965211777" />
+    <state x="490" y="176" width="672" height="677" key="run.anything.popup" timestamp="1606965607652">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="489" y="176" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606895244477" />
+    <state x="490" y="176" width="672" height="677" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1606965607652" />
   </component>
 </project>
